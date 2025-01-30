@@ -3,6 +3,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Home">
-	<h2>Welcome to My Website</h2>
-	<p>This is the homepage content.</p>
+
+		<div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+			<div class="text-center">
+				<h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Data to enrich your online business</h1>
+				<p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+			</div>
+		</div>
+
+	<div class="mx-auto max-w-6xl flex flex-col sm:flex-row gap-2">
+		<div class="sm:w-1/2 bg-gray-300 p-16 shadow-md">
+			<p class="text-gray-700">This is the first card.</p>
+		</div>
+		<div class="sm:w-1/2 bg-gray-300 p-16 shadow-md">
+			<h2 class="text-xl font-semibold">Card 2</h2>
+		</div>
+	</div>
 </BaseLayout>
