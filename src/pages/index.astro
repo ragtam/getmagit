@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Tablet from '../components/Tablet.astro';
 ---
 
 <BaseLayout title="Home">
-
 		<div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
 			<div class="text-center">
 				<h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Mateusz Garbaciak</h1>
@@ -11,13 +11,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 				<p class="mt-8 font-medium text-gray-500 sm:text-xl/8">Building scalable, independent, and high-quality frontend architectures with Angular, RxJS, and TypeScript.</p>
 			</div>
 		</div>
-
 	<div class="mx-auto max-w-6xl flex flex-col sm:flex-row gap-2">
-		<div class="sm:w-1/2 bg-gray-300 p-16 shadow-md">
-			<p class="text-gray-700">This is the first card.</p>
+		<div class="sm:w-1/2 bg-gray-300 shadow-md">
+			<div class="flex justify-center items-center transition-transform duration-200 hover:rotate-1">
+				<Tablet class="max-w-full max-h-full"></Tablet>
+			</div>
 		</div>
-		<div class="sm:w-1/2 bg-gray-300 p-16 shadow-md">
-			<h2 class="text-xl font-semibold">This is the second card.</h2>
+		<div class="sm:w-1/2 bg-gray-300 shadow-md">
+			<div class="flex justify-center items-center transition-transform duration-200 hover:rotate-1">
+				<Tablet class="max-w-full max-h-full"></Tablet>
+			</div>
 		</div>
 	</div>
 </BaseLayout>
