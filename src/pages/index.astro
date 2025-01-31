@@ -1,17 +1,18 @@
 ---
+import About from "../components/containers/About.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Tablet from '../components/Tablet.astro';
+import Tablet from '../components/ui/Tablet.astro';
 ---
 
 <BaseLayout title="Home">
-		<div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
-			<div class="text-center">
-				<h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Mateusz Garbaciak</h1>
-				<p class="mt-1 font-hairline text-gray-400 sm:text-xl/8">Frontend Developer | Microfrontend Specialist | Automation Enthusiast</p>
-				<p class="mt-8 font-medium text-gray-500 sm:text-xl/8">Building scalable, independent, and high-quality frontend architectures with Angular, RxJS, and TypeScript.</p>
-			</div>
+	<div class="py-32 sm:py-48 lg:py-56">
+		<div class="text-center">
+			<h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Mateusz Garbaciak</h1>
+			<p class="mt-1 font-hairline text-gray-400 sm:text-xl/8">Frontend Developer | Microfrontend Specialist | Automation Enthusiast</p>
+			<p class="mt-8 font-medium text-gray-500 sm:text-xl/8">Building scalable, independent, and high-quality frontend architectures with Angular, RxJS, and TypeScript.</p>
 		</div>
-	<div class="mx-auto max-w-6xl flex flex-col sm:flex-row gap-2">
+	</div>
+	<div class="flex flex-col sm:flex-row gap-2">
 		<div class="sm:w-1/2 bg-gray-300 shadow-md">
 			<div class="flex justify-center items-center transition-transform duration-200 hover:rotate-1">
 				<Tablet class="max-w-full max-h-full"></Tablet>
@@ -23,4 +24,5 @@ import Tablet from '../components/Tablet.astro';
 			</div>
 		</div>
 	</div>
+	<About></About>
 </BaseLayout>
