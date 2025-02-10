@@ -2,6 +2,7 @@
 import About from "../components/containers/About.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Tablet from '../components/ui/Tablet.astro';
+import MultilanguageGreet from "../components/ui/MultilanguageGreet.astro";
 ---
 
 <BaseLayout title="Home">
@@ -14,13 +15,26 @@ import Tablet from '../components/ui/Tablet.astro';
 	</div>
 	<div class="flex flex-col sm:flex-row gap-2">
 		<div class="sm:w-1/2 bg-gray-300 shadow-md">
-			<div class="flex justify-center items-center transition-transform duration-200 hover:rotate-1">
-				<Tablet class="max-w-full max-h-full"></Tablet>
+			<div class="flex justify-center items-center">
+				<Tablet class="max-w-full max-h-full">
+					<MultilanguageGreet class="absolute"></MultilanguageGreet>
+				</Tablet>
 			</div>
 		</div>
 		<div class="sm:w-1/2 bg-gray-300 shadow-md">
-			<div class="flex justify-center items-center transition-transform duration-200 hover:rotate-1">
-				<Tablet class="max-w-full max-h-full"></Tablet>
+			<div class="flex justify-center items-center">
+					<Tablet class="max-w-full max-h-full">
+						<img class="absolute"
+							x="200"
+							y="285"
+							width="100"
+							height="80"
+							rx="21.9194"
+							src="dev-logo.png"
+							preserveAspectRatio="xMidYMid meet"
+						/>
+				</a>
+				
 			</div>
 		</div>
 	</div>

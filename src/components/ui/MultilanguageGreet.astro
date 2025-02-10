@@ -1,0 +1,48 @@
+<style>
+    .hello-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+  
+    .hello-text {
+      color: #fff;
+      font-size: 3.5rem;
+      font-weight: 300;
+      position: absolute;
+      opacity: 0;
+      animation: cycleText 9s linear infinite;
+    }
+  
+    .hello-text:nth-child(1) { animation-delay: 0s; }    /* English */
+    .hello-text:nth-child(2) { animation-delay: -6s; }   /* Polish */
+    .hello-text:nth-child(3) { animation-delay: -3s; }   /* German */
+  
+    @keyframes cycleText {
+      0%, 10% {
+        opacity: 0;
+        transform: translateX(-20px);
+        filter: blur(10px);
+      }
+      15%, 30% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+      }
+      35%, 40% {
+        opacity: 0;
+        transform: translateX(20px);
+        filter: blur(10px);
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  
+  <div class="hello-container absolute">
+    <div class="hello-text">Hello!</div>
+    <div class="hello-text">Witaj!</div>
+    <div class="hello-text">Hallo!</div>
+  </div>
